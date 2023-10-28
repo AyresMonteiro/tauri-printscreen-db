@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/app
+    ports:
+      - "4173:4173"
     command: "tail -f /dev/null"
 
 
